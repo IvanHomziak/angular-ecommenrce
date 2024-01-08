@@ -23,7 +23,8 @@ export class ProductListComponent implements OnInit {
   previousKeyword: string = "";
 
   constructor(private productService: ProductService,
-              private routes: ActivatedRoute) { }
+              private routes: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     this.routes.paramMap.subscribe(() => {

@@ -32,7 +32,7 @@ export class ProductService {
     return this.getProducts(searchURL);
   }
 
-  getProductListPaginate(thePage: number, 
+  getProductListPaginate(thePage: number,
                          thePageSize: number,
                          theCategoryId: number): Observable<GetResponseProducts> {
 
@@ -58,7 +58,7 @@ export class ProductService {
     return this.getProducts(searchURL);
   }
 
-  searchProductsPaginate(thePage: number, 
+  searchProductsPaginate(thePage: number,
     thePageSize: number,
     theKeyword: string): Observable<GetResponseProducts> {
 
@@ -75,8 +75,6 @@ export class ProductService {
     );
   }
 }
-
-
 
 interface GetResponseProducts {
   _embedded: {
