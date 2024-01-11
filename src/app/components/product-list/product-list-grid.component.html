@@ -8,7 +8,7 @@
                   <div class="product-box">
 
                     <a routerLink="/products/{{tempProduct.id}}">
-                        <img src="{{ tempProduct.imageUrl }}" class="img-responsive"> 
+                        <img src="{{ tempProduct.imageUrl }}" class="img-responsive">
                     </a>
 
                     <a routerLink="/products/{{tempProduct.id}}">
@@ -16,14 +16,14 @@
                     </a>
 
                     <div class="price">{{ tempProduct.unitPrice | currency: 'USD' }}</div>
-                    <a href="#" class="primary-btn">Add to cart</a>
+                    <button (click)="addToCart(tempProduct)" class="btn btn-primary btn-sm">Add to cart</button>
                   </div>
                 </div>
 
                 <!-- if products empty then display a message -->
-                <div 
-                    *ngIf="products?.length == 0" 
-                    class="alert alert-warning col-md-12" 
+                <div
+                    *ngIf="products?.length == 0"
+                    class="alert alert-warning col-md-12"
                     role="alert">
                     No products found.
                 </div>
@@ -47,7 +47,7 @@
                                                 (pageChange)="listProducts()">
 
                                 </ngb-pagination>
-                
+
                             </div>
 
                             <div class="col-md-3 mt-2" style="text-align: right;">
