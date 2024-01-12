@@ -1,4 +1,4 @@
-/* 
+/*
  * ----------------------------
  * Common CSS
  * ----------------------------
@@ -10,6 +10,10 @@
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box
+}
+
+textWidth{
+  width: 100%;
 }
 
 body{
@@ -127,7 +131,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
     box-shadow:-2px 0 4px #0000003b
 }
 
-/* 
+/*
  * ----------------------------
  * Header Desktop Section
  * ----------------------------
@@ -307,7 +311,7 @@ input.au-input.au-input-xl{
     transform:translate(-50%,-50%)
 }
 
-/* 
+/*
  * ----------------------------
  * Left Menu Bar
  * ----------------------------
@@ -381,7 +385,7 @@ input.au-input.au-input-xl{
     color:#0da8e4
 }
 
-/* 
+/*
  * ----------------------------
  * Header Mobile Section
  * ----------------------------
@@ -517,7 +521,7 @@ input.au-input.au-input-xl{
     padding:10% 15%!important
 }
 
-/* 
+/*
  * ----------------------------
  * Products List
  * ----------------------------
@@ -537,7 +541,14 @@ input.au-input.au-input-xl{
     margin-left: 5px;
 }
 .product-box{
-    margin-bottom:60px
+    margin-bottom:60px;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+}
+.product-box button{
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 .price{
     margin:15px 0 0;
@@ -545,6 +556,7 @@ input.au-input.au-input-xl{
     color:#0da8e4
 }
 .product-box h1{
+    width: 100%;
     font-size:18px;
     border-bottom:1px solid #ccc;
     padding-bottom:5px;
@@ -559,7 +571,7 @@ input.au-input.au-input-xl{
     color:#585858
 }
 
-/* 
+/*
  * ----------------------------
  * Shopping Cart Checkout
  * ----------------------------
@@ -673,7 +685,7 @@ select{
     color:#828482
 }
 
-/* 
+/*
  * ----------------------------
  * Shopping Cart Details
  * ----------------------------
@@ -708,7 +720,7 @@ table.table.table-bordered th{
     margin-left:5px
 }
 
-/* 
+/*
  * ----------------------------
  * Product Details
  * ----------------------------
@@ -724,7 +736,7 @@ table.table.table-bordered th{
 }
 /**/
 
-/* 
+/*
  * ----------------------------
  * Buttons
  * ----------------------------
@@ -754,7 +766,7 @@ a.primary-btn:hover{
   font-weight: bold;
 }
 
-/* 
+/*
  * ----------------------------
  * Footer section
  * ----------------------------
@@ -779,7 +791,7 @@ footer ul li{
     padding:10px 20px
 }
 
-/* 
+/*
  * ----------------------------
  * Media Queries
  * ----------------------------
@@ -972,9 +984,6 @@ footer ul li{
     }
     .footer-pagination{
         text-align:center
-    }
-    .product-box{
-        text-align:centerg
     }
     .page-container{
         position:relative;
